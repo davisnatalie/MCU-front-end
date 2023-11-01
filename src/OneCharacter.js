@@ -76,7 +76,7 @@ function OneCharacter() {
 
     return ( 
         <>
-        <h1>{character.name}</h1>
+        <h3>{character.name}.</h3>
         <form onSubmit={handleOnSubmit}>
         <p>
             Debuted in&nbsp;

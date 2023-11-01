@@ -1,7 +1,7 @@
 function Home() {
     return (
         <>
-            <h1>Click on a link to get started!</h1>
+            <h3>Click on a link to get started.</h3>
         </>
     );
 }

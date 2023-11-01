@@ -10,7 +10,7 @@ function App() {
   return ( 
     <div className="App">
       <header>
-      <h1> This is an application for Creating, Reading, Updating, and Deleting Marvel Characters!</h1>
+      <h1> Create, Read, Update, & Delete Marvel Characters!</h1>
         <nav>
           <ul>
               <li>
