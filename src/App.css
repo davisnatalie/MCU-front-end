@@ -56,3 +56,24 @@ p {
     transform: rotate(360deg);
   }
 }
+
+
+/* unvisited link */
+a:link {
+  color: whitesmoke;
+}
+
+/* visited link */
+a:visited {
+  color: whitesmoke;
+}
+
+/* mouse over link */
+a:hover {
+  color: whitesmoke;
+}
+
+/* selected link */
+a:active {
+  color: whitesmoke;
+}
