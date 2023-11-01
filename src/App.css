@@ -34,9 +34,8 @@ li {
 }
 
 p {
-  min-height: 50vh;
   justify-content: center;
-  font-size: calc(2vmin);
+  font-size: 50vh;
   color: white;
 }
 
