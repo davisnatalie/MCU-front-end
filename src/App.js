@@ -8,7 +8,7 @@ import OneCharacter from './OneCharacter';
 function App() {
   return ( 
     <div className="App">
-      <h1> This is an MCU app!</h1>
+      <h1> This is an application for Creating, Reading, Updating, and Deleting Marvel Characters!</h1>
         <nav>
           <ul>
               <li>
