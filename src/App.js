@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import CreateCharacter from './CreateCharacter';
 import OneCharacter from './OneCharacter';
+import './App.css';
 
 function App() {
   return ( 
