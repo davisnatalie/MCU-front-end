@@ -9,6 +9,7 @@ import './App.css';
 function App() {
   return ( 
     <div className="App">
+      <header>
       <h1> This is an application for Creating, Reading, Updating, and Deleting Marvel Characters!</h1>
         <nav>
           <ul>
@@ -34,6 +35,7 @@ function App() {
         <Route path="/mcu/create" element= {<CreateCharacter />}/>
         <Route path="/mcu/:name" element= {<OneCharacter />}/>         
       </Routes>
+      </header>
     </div> 
   );
 }
