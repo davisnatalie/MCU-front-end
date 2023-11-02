@@ -16,7 +16,6 @@
 
 header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +25,7 @@ header {
 }
 
 h3 {
-height: 75vh;
+font-size: calc(10px + 2vmin);
 }
 
 li {
@@ -35,7 +34,7 @@ li {
 
 p {
   justify-content: center;
-  font-size: 50vh;
+  font-size: calc(2vmin);
   color: white;
 }
 
