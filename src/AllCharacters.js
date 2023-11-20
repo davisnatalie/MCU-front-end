@@ -14,22 +14,12 @@ function AllCharacters() {
       })
       .catch((e) => console.log(e))
   }, [])
-
-  const removeDots = {
-    listStyleType: "none"
-  }
-
-  const containerStyle = {
-    backgroundColor: '#282c34', // Replace with the actual color code you want
-    padding: '20px', // Adjust padding as needed
-  };
-
   return (
-    <div style={containerStyle}>
-      <ul style={removeDots}>
+    <>
+      <ul>
         {serverData.length > 0 ?
           serverData.map((character) => (
-            <li key={character._id} style={removeDots}>
+            <li key={character._id}>
               <Link to={`/mcu/${character.name}`}>{character.name}</Link>
             </li>
           ))
@@ -37,7 +27,7 @@ function AllCharacters() {
           <h1>loading...</h1>
         }
       </ul>
-    </div>
+      </>
   );
 }
 

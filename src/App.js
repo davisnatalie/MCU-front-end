@@ -29,13 +29,13 @@ function App() {
 
           </ul>
         </nav>
+      </header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/mcu" element={<AllCharacters />} />
         <Route path="/mcu/create" element= {<CreateCharacter />}/>
         <Route path="/mcu/:name" element= {<OneCharacter />}/>         
       </Routes>
-      </header>
     </div> 
   );
 }
