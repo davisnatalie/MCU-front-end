@@ -10,8 +10,8 @@ function App() {
   return ( 
     <div className="App">
       <header>
-      <h1> Create, Read, Update, & Delete Marvel Characters!</h1>
         <nav>
+        <h1> Create, Read, Update, & Delete Marvel Characters!</h1>
           <ul>
               <li>
                   <Link to="/">Home</Link>
