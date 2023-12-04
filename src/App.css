@@ -1,89 +1,114 @@
-*, *::before, *::after { box-sizing: border-box; }
+/* Global Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
-    --primary-dark-color: #082032;
-    --primary-medium-color: #93B1A6;
-    --accent-light-color: #334756;
-    --accent-medium-color: #2C394B;
-    --font: Arial, sans-serif;
+  /* Color Variables */
+  --primary-dark-color: #082032;
+  --primary-medium-color: #93B1A6;
+  --accent-light-color: #334756;
+  --accent-medium-color: #2C394B;
+  --font: Arial, sans-serif;
 }
 
 body {
-    background-color: var(--primary-dark-color);
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: sans-serif;
-    line-height: 2em;
-    font-size: 0.9em;
-    color: whitesmoke;
-    margin:0;
+  /* Body Styling */
+  font-family: var(--font);
+  line-height: 1.6;
+  font-size: 1rem; /* Changed from 0.9em for better readability */
+  color: whitesmoke;
+  margin: 0;
+  background-color: var(--primary-dark-color);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  text-align: center;
 }
 
 .App {
   width: 100%;
 }
+
+
 header {
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: space-between;
-  text-align: center;
-  padding: auto;
+  align-items: center; /* Center align items horizontally */
+  text-align: center; /* Center align text */
 }
+
+h1 {
+  margin-bottom: 20px; /* Add space between h1 and nav */
+}
+
+nav {
+  width: 100%; /* Ensure it takes the full width */
+}
+
+nav ul {
+  padding-left: 0; /* Remove default padding */
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+  justify-content: center; /* Center align items horizontally */
+}
+
+nav li {
+  margin-right: 20px; /* Adjust the margin between navigation items */
+}
+
 
 h3 {
-margin:auto;
+  /* Heading 3 Styling */
+  margin: auto; /* Center align */
 }
 
-li {
+ul {
+  /* List Styling */
+  padding-left: 0; /* Remove default padding */
   list-style: none;
 }
 
 p {
-  justify-content: center;
-  font-size: 50vh;
-  color: white;
+  /* Paragraph Styling */
+  text-align: center; /* Center align */
+  font-size: 3rem; /* Set a fixed font size */
+  max-width: 100%; /* Ensures text width doesn't exceed screen width */
+  margin: 0; /* Reset margin to avoid unexpected spacing */
+  overflow-wrap: break-word; /* Wraps long words to prevent overflow */
 }
 
-h4 {
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.characterList{
+h4, .characterList {
+  /* Common Styling for h4 and .characterList */
   text-align: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem; /* Adjusted for readability */
   color: white;
 }
 
-/* unvisited link */
-a:link {
+/* Links Styling */
+a {
   color: whitesmoke;
+  text-decoration: none; /* Remove underline */
 }
 
-/* visited link */
-a:visited {
-  color: whitesmoke;
-}
-
-/* mouse over link */
 a:hover {
-  color: whitesmoke;
+  text-decoration: underline; /* Underline on hover */
 }
 
-/* selected link */
-a:active {
-  color: whitesmoke;
-}
-
-/* Extra small devices (phones, 600px and down) */
+/* Media Query for Small Devices */
 @media only screen and (max-width: 600px) {
   ul {
     margin-top: auto;
   }
+  
   .characterList {
-    margin-top: 135px;
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    font-size: 1.5rem; /* Adjusted font size for better readability */
+  }
+  
+  p {
+    font-size: 2rem; /* Adjusted font size for better readability */
   }
 }
