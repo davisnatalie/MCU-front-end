@@ -85,3 +85,10 @@ a:hover {
 a:active {
   color: whitesmoke;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    position: fixed;
+  }
+}
