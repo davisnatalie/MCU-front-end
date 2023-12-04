@@ -1,13 +1,25 @@
 *, *::before, *::after { box-sizing: border-box; }
-
-body {
-  color: whitesmoke;
-  background-color: #282c34;
+:root {
+    --primary-dark-color: #082032;
+    --primary-medium-color: #93B1A6;
+    --accent-light-color: #334756;
+    --accent-medium-color: #2C394B;
+    --font: Arial, sans-serif;
 }
 
+body {
+    background-color: var(--primary-dark-color);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    line-height: 2em;
+    font-size: 0.9em;
+    color: whitesmoke;
+    margin:0;
+}
 header {
-  background-color: #282c34;
-  color: #fff;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
