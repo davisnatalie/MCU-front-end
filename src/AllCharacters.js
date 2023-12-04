@@ -19,9 +19,8 @@ function AllCharacters() {
         listStyleType:"none"
     }
     return ( 
-    <ul>
-
-{
+    <ul class="characterList">
+    {
       serverData.length > 0 ?
       serverData.map((character) => {
         return (
@@ -31,7 +30,7 @@ function AllCharacters() {
         )
       })
       :
-      <h1>loading...</h1>
+      <h4>loading...</h4>
       }
 
     </ul> );

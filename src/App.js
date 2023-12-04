@@ -26,7 +26,6 @@ function App() {
                     Create New MCU Character
                   </Link>
               </li>
-
           </ul>
         </nav>
       <Routes>

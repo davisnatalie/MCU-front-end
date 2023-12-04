@@ -88,7 +88,7 @@ function OneCharacter() {
             }
 
         </p>
-        <p> 
+        <h4> 
             Released in&nbsp;
             {
                 isEditing ? 
@@ -97,7 +97,7 @@ function OneCharacter() {
                 <span>{character.debutYear}</span>
             }
  
-        </p>
+        </h4>
 
         {isEditing ? <button type="submit">Submit Edit</button> : <br/>}
 
