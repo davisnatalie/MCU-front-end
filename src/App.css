@@ -35,7 +35,6 @@ margin:auto;
 
 li {
   list-style: none;
-  padding-left: -10px;
 }
 
 p {
@@ -51,8 +50,7 @@ h4 {
 }
 
 .characterList{
-  text-align: left;
-  justify-content: center;
+  text-align: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -80,9 +78,9 @@ a:active {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   ul {
-    margin-top: 135px;
+    margin-top: auto;
   }
   .characterList {
-    margin: auto;
+    margin-top: 135px;
   }
 }
