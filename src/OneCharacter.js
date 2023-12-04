@@ -78,7 +78,7 @@ function OneCharacter() {
         <>
         <h3>{character.name}.</h3>
         <form onSubmit={handleOnSubmit}>
-        <p>
+        <h4>
             Debuted in&nbsp;
             {
                 isEditing ? 
@@ -87,7 +87,7 @@ function OneCharacter() {
                 <span>{character.debut}</span>
             }
 
-        </p>
+        </h4>
         <h4> 
             Released in&nbsp;
             {
