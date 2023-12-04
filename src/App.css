@@ -28,9 +28,9 @@ header {
   min-height: 100vh;
 }
 
-/* h3 {
-height: 75vh;
-} */
+h3 {
+margin:auto;
+}
 
 li {
   list-style: none;
@@ -80,5 +80,10 @@ a:active {
   h1 {
     position: fixed;
   }
-  
+  ul {
+    margin-top: 135px;
+  }
+  .characterList {
+    margin: auto;
+  }
 }
